@@ -36,10 +36,10 @@ if st.button('开始分析'):
     if user_input.strip() == '':
         st.warning("请输入有效内容")
     else:
-        with st.spinner('正在分析中...', show_time=True)
-        score = judge_level(user_input)
-        st.success(f'歧视分析结果得分是：**{score}**')
-        if score != '1':
-            result = tiao_zheng(user_input)
-            st.success(f'调整后的语句是：**{result}**')
+        with st.spinner('正在分析中...', show_time=True)：
+            score = judge_level(user_input)
+            st.success(f'歧视分析结果得分是：**{score}**')
+            if score != '1':
+                result = tiao_zheng(user_input)
+                st.success(f'调整后的语句是：**{result}**')
 
